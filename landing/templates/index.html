@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/assets/css/styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+        <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    </head>
+    <body>
+
+        <header>
+            <a href="#home">
+                <img src="/assets/images/bkomachi.png">
+            </a> 
+        </header>
+
+        <nav class="text-center py-3">
+            <ul class="list-inline m-0">
+              <li class="list-inline-item mx-3">
+                <a href="#home">Inicio</a>
+              </li>
+              <li class="list-inline-item mx-3">
+                <a href="#albums">Albums</a>
+              </li>
+              <li class="list-inline-item mx-3">
+                <a href="#aboutus">Sobre Nosotros</a>
+              </li>
+              <li class="list-inline-item mx-3">
+                <a href="#contact">Contacto</a>
+              </li>
+            </ul>
+          </nav>
+
+        <div id="carouselFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/assets/images/ai1.jpg" class="d-block w-100" alt="Ai Hoshino">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/images/ai2.png" class="d-block w-100" alt="Ai Hoshino">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+          <section id="aboutus" class="py-5 text-white text-center">
+            <div class="container" data-aos="fade-up">
+              <h2 class="mb-4" data-aos="fade-down">Sobre nosotros</h2>
+              <div class="row justify-content-center">
+                <div class="col-md-8" data-aos="zoom-in" data-aos-delay="200">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam temporibus, optio dolor illum ad ut ullam officiis minus, laudantium, alias animi porro quis. Quisquam, quo consequuntur et ut totam ea.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          
+
+        <div class="container text-center" id="albums">
+            <div class="row">
+              <!-- Concierto 1 -->
+              <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                  <img class="card-img-top" src="https://i1.sndcdn.com/artworks-l14Oa1YYhCTeHUVT-4Hzj5g-t500x500.jpg" alt="Portada del Concierto 1">
+                  <div class="card-body">
+                    <h3 class="card-title">Album 1</h3>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+                    </p>
+                    <button class="btn btn-primary" type="button">Comprar</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Concierto 2 -->
+              <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                  <img class="card-img-top" src="https://i.redd.it/og-b-komachi-v0-zxecgx3nmemb1.jpg?width=564&format=pjpg&auto=webp&s=28a73f778d7854850ad700f883e7a0f6c903ce0a" alt="Portada del Concierto 2">
+                  <div class="card-body">
+                    <h3 class="card-title">Album 2</h3>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+                    </p>
+                    <button class="btn btn-primary" type="button">Comprar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        <section id="contact">
+            <div class="container">
+              <h2 class="text-center mb-4">¡Contáctanos!</h2>
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <form>
+                    <div class="mb-3">
+                      <label for="nombre" class="form-label">Nombre</label>
+                      <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre">
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="email" name="email" placeholder="ejemplo@correo.com">
+                    </div>
+                    <div class="mb-3">
+                      <label for="telefono" class="form-label">Número de Teléfono</label>
+                      <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="+56912345678">
+                    </div>
+                    <div class="mb-3">
+                      <label for="mensaje" class="form-label">Mensaje</label>
+                      <textarea class="form-control" id="mensaje" name="mensaje" rows="3" placeholder="Escribe tu mensaje..."></textarea>
+                    </div>
+                    <input class="btn btn-primary" type="submit" value="Enviar">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+
+        <footer>
+            <a href="https://www.instagram.com/oshinoko.official/?hl=es"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/oshinoko_global"><i class="fa-brands fa-x-twitter"></i></a>
+            
+        </footer>
+
+        <script src="https://kit.fontawesome.com/6bafff53d0.js" crossorigin="anonymous"></script>
+        <script src="/assets/js/script.js"></script>
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>
